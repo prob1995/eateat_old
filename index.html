@@ -1,0 +1,344 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//zh-tw" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-tw" lang="zh-tw"><head>
+    <meta http-equiv="Content-Language" content="zh-tw" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>吃吃便當</title>
+<meta name="keywords" content="吃吃便當,便當,台北便當,健康便當,美食,飯,外送,便當專賣,好吃便當,中山區便當,便當推薦,eateat,雞腿便當,牛肉便當,壽喜燒便當,擺攤,美味便當,中午外送,四平街">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.scrollTo-min.js"></script>
+    </script>
+    <script type="text/javascript" src="js/jQueryRotate.2.1.js">
+    </script> 
+    <script type="text/javascript" src="js/jQueryRotateCompressed.2.1.js">
+    </script><script type="text/javascript">
+	
+$(function(){
+    var $scrollerWindow = $("#content");
+    var $speed = 1000;
+    var $scrollOpt = {axis: 'x', offset:{left: 0, top: 0}};
+ 
+    function gotoHome(){
+        $scrollerWindow.stop().scrollTo($("#home"), $speed, $scrollOpt);
+        $("#page_title").text($("#home h2.page_title").html());
+        return false;
+    }
+    function gotoPage1(){
+        $scrollerWindow.stop().scrollTo($("#page1"), $speed, $scrollOpt);
+        $("#page_title").text($("#page1 h2.page_title").html());
+        return false;
+    }
+    function gotoPage2(){
+        $scrollerWindow.stop().scrollTo($("#page2"), $speed, $scrollOpt);
+        $("#page_title").text($("#page2 h2.page_title").html());
+        return false;
+    }
+    function gotoPage3(){
+        $scrollerWindow.stop().scrollTo($("#page3"), $speed, $scrollOpt);
+        $("#page_title").text($("#page3 h2.page_title").html());
+        return false;
+    }
+	function gotoPage4(){
+        $scrollerWindow.stop().scrollTo($("#page4"), $speed, $scrollOpt);
+        $("#page_title").text($("#page4 h2.page_title").html());
+        return false;
+    }
+	function gotoPage5(){
+        $scrollerWindow.stop().scrollTo($("#page5"), $speed, $scrollOpt);
+        $("#page_title").text($("#page5 h2.page_title").html());
+        return false;
+    }  
+    function gotoPage6(){
+        $scrollerWindow.stop().scrollTo($("#page6"), $speed, $scrollOpt);
+        $("#page_title").text($("#page6 h2.page_title").html());
+        return false;
+    }    
+    
+    function noScroll(){
+        return false;
+    }
+    $(".goto_home").live("click", gotoHome);
+    $(".goto_page1").live("click", gotoPage1);
+    $(".goto_page2").live("click", gotoPage2);
+    $(".goto_page3").live("click", gotoPage3);
+	$(".goto_page4").live("click", gotoPage4);
+	$(".goto_page5").live("click", gotoPage5);
+	$(".goto_page6").live("click", gotoPage6);  
+});
+
+$(function(){
+	// 幫 A 連結加上 hover() 事件
+	$("#nav ul li").hover(function(){	// 當滑鼠移進時..
+		// 先停止未完成的動畫再進行新的動畫
+		// 變更 margin-top
+		$(this).rotate({animateTo:180});
+		$(this).stop().animate({
+			marginTop: 30
+		}, 300);
+	}, function(){	// 當滑鼠移出時..
+		// 先停止未完成的動畫再進行新的動畫
+		// 變更 margin-top
+		$(this).rotate({animateTo:0});
+		$(this).stop().animate({
+			marginTop: 0
+		}, 200);
+	}).focus(function(){	// 當 A 連結取得焦點時..
+		// 讓本身失去焦點
+		$(this).blur();
+	});
+
+$(function(){
+	$("#lunbox").mousedown(function(){
+		if ($("#lunbox").stop().css('left') == '300px')
+		{
+			$("#lunbox").rotate({animateTo:-180});
+			$("#lunbox").animate({left:'-300px' }, 600 ,'swing');
+		}
+		else{
+			$("#lunbox").rotate({animateTo:0});
+			$("#lunbox").animate( { left:'300px' }, 600 ,'swing');	
+			}
+	});
+	
+	$("#lunbox2").mousedown(function(){
+		if ($(this).stop().css('left') == '300px')
+		{
+			$(this).rotate({animateTo:-180});
+			$(this).animate({left:'-300px' }, 600 ,'swing');
+		}
+		else{
+			$(this).rotate({animateTo:0});
+			$(this).animate( { left:'300px' }, 600 ,'swing');	
+			}
+	});
+	
+	$("#lunbox3").mousedown(function(){
+		if ($(this).stop().css('left') == '300px')
+		{
+			$(this).rotate({animateTo:-180});
+			$(this).animate({left:'-300px' }, 600 ,'swing');
+		}
+		else{
+			$(this).rotate({animateTo:0});
+			$(this).animate( { left:'300px' }, 600 ,'swing');	
+			}
+	});
+	
+	$("#lunbox4").mousedown(function(){
+		if ($(this).stop().css('left') == '300px')
+		{
+			$(this).rotate({animateTo:-180});
+			$(this).animate({left:'-300px' }, 600 ,'swing');
+		}
+		else{
+			$(this).rotate({animateTo:0});
+			$(this).animate( { left:'300px' }, 600 ,'swing');	
+			}
+	});
+	
+	$("#lunbox5").mousedown(function(){
+		if ($(this).stop().css('left') == '300px')
+		{
+			$(this).rotate({animateTo:-180});
+			$(this).animate({left:'-300px' }, 600 ,'swing');
+		}
+		else{
+			$(this).rotate({animateTo:0});
+			$(this).animate( { left:'300px' }, 600 ,'swing');	
+			}
+	});
+	
+	$("#lunbox6").mousedown(function(){
+		if ($(this).stop().css('left') == '300px')
+		{
+			$(this).rotate({animateTo:-180});
+			$(this).animate({left:'-300px' }, 600 ,'swing');
+		}
+		else{
+			$(this).rotate({animateTo:0});
+			$(this).animate( { left:'300px' }, 600 ,'swing');	
+			}
+	});
+	
+});
+
+});
+
+function MM_changeProp(objId,x,theProp,theValue) { //v9.0
+  var obj = null; with (document){ if (getElementById)
+  obj = getElementById(objId); }
+  if (obj){
+    if (theValue == true || theValue == false)
+      eval("obj.style."+theProp+"="+theValue);
+    else eval("obj.style."+theProp+"='"+theValue+"'");
+  }
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+    </script>
+    <style type="text/css">
+    body,td,th {
+	color: #666;
+}
+    a:link {
+	color: #666;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #666;
+}
+a:hover {
+	text-decoration: none;
+	color: #999;
+}
+a:active {
+	text-decoration: none;
+	color: #666;
+}
+#preloadedImages {
+       width: 0px;
+       height: 0px;
+       display: inline;
+       background-image: url(pic/eat2.png);
+       background-image: url(pic/pic1.png);
+       background-image: url(pic/pic2.png);
+       background-image: url(pic/pic3.png);
+       background-image: url(pic/homepic.jpg);
+	   background-image: url(pic/homepic2.jpg);
+	   background-image: url(pic/pics1.png);
+	   background-image: url(pic/pics2.png);
+	   background-image: url(pic/pics3.png);
+	   background-image: url(pic/rec1_01.jpg);
+	   background-image: url(pic/food_01a.jpg);
+	   background-image: url(pic/food_01b.jpg);
+	   background-image: url(pic/food_02a.jpg);
+	   background-image: url(pic/food_02b.jpg);
+	   background-image: url(pic/food_03a.jpg);
+	   background-image: url(pic/food_03b.jpg);
+} 
+</style>
+<link href="http://eateat.theweb.tw/pic/eat.ico" rel="shortcut icon" type="image/x-icon" />
+<link href="http://eateat.theweb.tw/pic/eat.ico" rel="Bookmark" type="image/x-icon" />
+<link href="http://eateat.theweb.tw/pic/eat.ico" rel="icon" type="image/x-icon" />
+</head>
+<body>
+<div id="wrap">
+  <div class="topbar"></div>
+<div class="bgwh1"></div>
+<div class="bgwh2"></div>
+<a href="pic/eateatdm.jpg" target="_blank"><div id="dldm">菜 單 下 載</div></a>
+
+<div id="content">
+  <div id="contentScroller">
+
+<div id="home" class="page">
+  <div id="homepic" class="homepic"><img src="pic/homepic.jpg" alt="外送專線：(02)2377-1173 ●預約時間：午餐-每日11點前/晚餐-每日15點前●大安區滿三個以上可外送，台北其他地區請來電洽談ㄏㄏ" width="1000" height="703" /></div>
+<div id="homet1" class="hometitle1">外送專線：(02)2377-1173<br><br> ●預約時間：午餐-每日11點前/晚餐-每日15點前 ●大安區滿三個以上可外送，台北其他地區請來電洽談ㄏㄏ</div>
+<div id="homelogo" class="homelogo_b"><img src="pic/logo_b.png" alt="吃吃便當" width="164" height="100" /></div>
+</div>      
+      <div id="page1" class="page">
+        <div id="lunbox"><img src="pic/pic1.png" width="700" height="700" /></div>
+        <div class="menu_title"><img src="pic/menu_t1.png" width="300" height="150" />
+        <div class=bento_content>
+        <!--    <h1>鹹豬肉便當</h1>  -->
+            <p>香煎過後鋪上檸檬薄片一同放入烤箱，<br>
+            酥脆的口感與濃厚的風味，再搭配蒜片與蔥末，<br>
+            重口味蔓延整個味蕾。</p>
+        </div>
+        </div>
+        <div class="food_name"><img src="pic/food_01.png" width="136" height="390" /></div>
+      </div>
+      
+        <div id="page2" class="page">
+        <div id="lunbox2"><img src="pic/pic2.png" width="700" height="700" /></div>
+        <div class="menu_title"><img src="pic/menu_t2.png" width="300" height="150" />
+        <div class=bento_content>
+        <!--    <h1>菜多多便當</h1> -->
+            <p>爽脆蔬菜搭配菇類的滑順細膩，<br>
+            豐富層次的口感變化，<br>
+            方便素的簡單訴求，讓茹素的客倌安心享用。</p>
+        </div>
+        </div>
+        <div class="food_name"><img src="pic/food_02.png" width="136" height="390" /></div>
+        </div>
+
+        <div id="page3" class="page">
+        <div id="lunbox3"><img src="pic/pic3.png" width="700" height="700" /></div>
+        <div class="menu_title"><img src="pic/menu_t3.png" width="300" height="150" />
+        <div class=bento_content>
+         <!--   <h1>壽喜燒便當</h1>  -->
+            <p>獨門醬燒口味，<br>
+            白飯與醬汁充分融合，醃漬入味的多汁雞肉，<br>
+            大口吃下不同於一般壽喜燒的絕妙風味。</p>
+        </div>
+        </div>
+        <div class="food_name"><img src="pic/food_03.png" width="136" height="390" /></div>
+        </div>
+
+        <div id="page4" class="page">
+        <div id="lunbox4"><img src="pic/pic4.png" width="700" height="700" /></div>
+        <div class="menu_title"><img src="pic/menu_t4.png" width="300" height="150" />
+        <div class=bento_content>
+         <!--   <h1>雞腿排便當</h1> -->
+            <p>使用先煎後烤的烹調方式，<br>
+            保留了雞腿排的肉汁，<br>
+            撒上酥脆的麵包粉，放入烤箱烤至金黃，<br>
+            吃起來口感十足。</p>
+        </div>
+        </div>
+        <div class="food_name"><img src="pic/food_04.png" width="136" height="390" /></div>
+        </div>
+
+        <div id="page5" class="page">
+        <div id="lunbox5"><img src="pic/pic5.png" width="700" height="700" /></div>
+        <div class="menu_title"><img src="pic/menu_t5.png" width="300" height="150" />
+        <div class=bento_content>
+            <!--<h1>盡力秋刀魚</h1>-->
+            <p>用整隻盡力去骨的秋刀魚，<br>
+            刮鱗去頭，剪鰭剖腹，除去了苦味，<br>
+            只有秋刀魚的香氣充滿鼻腔，<br>
+            品嘗起來爽口又不沾手。</p>
+        </div>        
+        </div>
+        <div class="food_name"><img src="pic/food_05.png" width="136" height="390" /></div>
+        </div>
+        
+        <div id="page6" class="page">
+        <div id="lunbox6"><img src="pic/pic6.png" width="700" height="700" /></div>
+        <div class="menu_title"><img src="pic/menu_t6.png" width="300" height="150" />
+        <div class=bento_content>
+          <!--  <h1>就是排骨便當</h1> -->
+            <p>原創滷汁細火燉滷，<br>
+            扎實的排骨肉感搭配粒粒分明的白飯，<br>
+            一開蓋香味四溢，令人食指大動。</p>
+        </div>        
+        </div>
+        <div class="food_name"><img src="pic/food_06.png" width="136" height="390" /></div>
+        </div>
+
+
+        
+    </div>
+  </div>
+</div>
+<div id="nav">
+    <ul>
+    <li><a href="#home" id="navHome" class="goto_home"><img src="pic/eat2.png" width="70" height="70" border="0" onclick="MM_changeProp('mr','','backgroundImage','none','DIV')" /></a></li>
+        <li><a href="#page1" id="navPage1" class="goto_page1"><img src="pic/pics1.png" name="img" width="80" height="80" border="0" id="img" /></a></li>
+        <li><a href="#page2" id="navPage2" class="goto_page2"><img src="pic/pics2.png" width="80" height="80" border="0" /></a></li>
+        <li><a href="#page3" id="navPage3" class="goto_page3"><img src="pic/pics3.png" width="80" height="80" border="0" /></a></li>
+        <li><a href="#page4" id="navPage4" class="goto_page4"><img src="pic/pics4.png" width="80" height="80" border="0" /></a></li>
+        <li><a href="#page5" id="navPage5" class="goto_page5"><img src="pic/pics5.png" width="80" height="80" border="0" /></a></li>
+        <li><a href="#page6" id="navPage6" class="goto_page6"><img src="pic/pics6.png" width="80" height="80" border="0" /></a></li>
+    
+    </ul>
+  </div>
+</div>
+
+</body>
+</html>

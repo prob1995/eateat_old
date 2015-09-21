@@ -1,0 +1,382 @@
+ul, ol {
+	list-style-image: none;
+	list-style-type: none;
+}
+p{
+	line-height:150%;
+}
+ 
+#wrap {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+}
+
+
+#head {
+	width: 100%;
+	height: 150px;
+	position: relative;
+	margin: 0;
+	padding: 0;
+	z-index: 1;
+}
+
+#title {
+	position: absolute;
+	bottom: 30px;
+	left: 20px;
+	margin: 0;
+	padding: 0;
+}
+.lunchbox {
+	height: 700px;
+	width: 700px;
+	left: 1600px;
+	position: absolute;
+	z-index: 2;
+	cursor: pointer;
+}
+.butt {
+	top: 0px;
+}
+.recom1 {
+	position: absolute;
+	height: 450px;
+	width: 650px;
+	top: 0px;
+	z-index: 1;
+	left: 2050px;
+}
+.recom2 {
+	position: absolute;
+	height: 450px;
+	width: 650px;
+	top: 0px;
+	z-index: 1;
+	left: 3750px;
+}
+.recom3 {
+	position: absolute;
+	height: 450px;
+	width: 650px;
+	top: 0px;
+	z-index: 1;
+	left: 5450px;
+}
+.menu_title {
+	position: absolute;
+	height: 150px;
+	width: 300px;
+	left: 800px;
+	top: 20px;
+}
+
+
+
+
+
+
+#nav {
+	overflow: hidden;
+	position: absolute;
+	top: -45px;
+	width: 1000px;
+	z-index: 1;
+	margin-left: -540px;
+	left: 50%;
+	height: 130px;
+	float: left;
+}
+
+
+
+#nav li {
+	float: left;
+	margin-right: 20px;
+}
+
+
+
+
+#nav li a {
+	color: #999;
+	text-decoration: none;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+#controlContainer {
+    clear: both;
+}
+#content {
+	overflow: hidden;
+	width: 1400px;
+	height: 850px;
+	position: absolute;
+	top: 80px;
+	z-index: 0;
+	margin-top: 0;
+	margin-right: 0px;
+	margin-bottom: 0;
+	margin-left: -700px;
+	left: 50%;
+}
+#recbutt {
+	z-index: 5;
+	position: relative;
+	left: -120px;
+	top: 570px;
+}
+
+#contentScroller {
+	width: 20000px;
+	height: 900px;
+}
+.recword {
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+.recbutt {
+	z-index: 5;
+}
+#recom {
+}
+
+
+.page {
+	float: left;
+	width: 1700px;
+	height: 900px;
+	color: #898989;
+	position: relative;
+}    
+.bgwh1 {
+	background-image: url(../pic/bgwh1.png);
+	height: 800px;
+	width: 200px;
+	position: fixed;
+	z-index: 3;
+	margin-left: -700px;
+	left: 50%;
+	top: 50px;
+}
+.topbar {
+	background-image: url(../pic/topbar.png);
+	background-repeat: repeat-x;
+	position: absolute;
+	height: 50px;
+	width: 100%;
+	left: 0px;
+	top: 0px;
+}
+
+#lunbox {
+	float: left;
+	height: 700px;
+	width: 700px;
+	position: relative;
+	top: 0px;
+	left: 300px;
+	z-index: 2;
+	cursor: pointer;
+
+}
+#lunbox2 {
+	float: left;
+	height: 700px;
+	width: 700px;
+	position: relative;
+	top: 0px;
+	left: 300px;
+	z-index: 2;
+	cursor: pointer;
+
+}
+#lunbox3 {
+	float: left;
+	height: 700px;
+	width: 700px;
+	position: relative;
+	top: 0px;
+	left: 300px;
+	z-index: 2;
+	cursor: pointer;
+
+}
+#lunbox4 {
+	float: left;
+	height: 700px;
+	width: 700px;
+	position: relative;
+	top: 0px;
+	left: 300px;
+	z-index: 2;
+	cursor: pointer;
+
+}
+#lunbox5 {
+	float: left;
+	height: 700px;
+	width: 700px;
+	position: relative;
+	top: 0px;
+	left: 300px;
+	z-index: 2;
+	cursor: pointer;
+
+}
+
+#lunbox6 {
+	float: left;
+	height: 700px;
+	width: 700px;
+	position: relative;
+	top: 0px;
+	left: 300px;
+	z-index: 2;
+	cursor: pointer;
+
+}
+
+
+
+
+
+#recomm {
+	height: 550px;
+	width: 650px;
+	position: relative;
+	top: 170px;
+	left: 0px;
+	z-index: 1;
+	float: inherit;
+	margin-left: -350px;
+}
+
+
+.bgwh2 {
+	background-image: url(../pic/bgwh2.png);
+	height: 800px;
+	width: 200px;
+	position: fixed;
+	z-index: 3;
+	margin-left: 500px;
+	left: 50%;
+	top: 50px;
+}
+
+
+    .homeword {
+	color: #FFF;
+	text-align: center;
+}
+    .bott {
+	height: 100px;
+	width: 1000px;
+	margin-left: -500px;
+	position: absolute;
+	z-index: 2;
+	left: 50%;
+	top: 930px;
+	list-style-type: none;
+	float: right;
+	padding-top: 20px;
+	border-top-style: dashed;
+	border-top-width: 1px;
+	border-top-color: #CCC;
+}
+.tab_rightline {
+	border-right-width: 2px;
+	border-right-style: solid;
+	border-right-color: #999;
+	padding-left: 38px;
+}
+#img {
+}
+
+.menu_bott {
+	background-color: #CCC;
+	height: 3px;
+	width: 1000px;
+	left: 50%;
+	top: 60px;
+	position: relative;
+	margin-left: -500px;
+	overflow: hidden;
+}
+.menu_name {
+	height: 60px;
+	width: 400px;
+	left: 50%;
+	top: 15px;
+	position: relative;
+	margin-left: 100px;
+	overflow: hidden;
+}
+
+
+.tab_padding {
+	padding-left: 38px;
+}
+
+.tab_whbg {
+	background-image: url(../pic/whbg50.png);
+}
+.homepic {
+	position: absolute;
+	left: 200px;
+}
+.hometitle1 {
+	left: 200px;
+	top: 770px;
+	position: absolute;
+	font-size: 15px;
+	height: 20px;
+	width: auto;
+	color: #000;
+	font-weight: bolder;
+	font-family: "微軟正黑體", Gadget, sans-serif;
+}
+.homelogo_b {
+	top: 720px;
+	position: absolute;
+	left: 1036px;
+}
+    .food_name {
+	position: absolute;
+	height: 390px;
+	width: 136px;
+	top: 150px;
+	left: 974px;
+}
+    
+#dldm {
+	font-family: "微軟正黑體";
+	font-size: 18px;
+	font-weight: bold;
+	color: #FFF;
+	background-color: #CCC;
+	position: absolute;
+	height: 20px;
+	width: 90px;
+	left: 50%;
+	top: 794px;
+	cursor:pointer;
+	padding: 12px;
+	z-index: 99;
+	margin-left: -500px;
+}
+#dldm:hover {
+	background-color: #999;
+}
+
+.bento_content{
+	margin-left: -350px;
+    margin-top: 60px;
+	width: 400px;
+	text-align:center ;
+	font-size: 18px;
+}
